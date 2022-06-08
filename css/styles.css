@@ -98,12 +98,20 @@ header {
   color: #2196f3;
 }
 .title {
-  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
   color: #ffffff;
   height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 .title .container {
   display: flex;
