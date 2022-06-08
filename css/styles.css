@@ -213,9 +213,11 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  height: 368px;
+  height: 428px;
   background-color: #ffffff;
   margin: 0;
+}
+.our-team-links {
 }
 .our-team-list-item:not(:last-child) {
   margin-right: 30px;
