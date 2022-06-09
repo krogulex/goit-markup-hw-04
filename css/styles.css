@@ -1,3 +1,7 @@
+/* GENERAL */
+:root {
+  --main-color: brown;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -37,6 +41,15 @@ link {
   align-items: center;
   margin: 0 auto;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* END GENERAL */
+
+/* MAIN PAGE */
+
+/* HEADER */
 header {
   text-decoration: none;
   font-family: "Roboto";
@@ -90,13 +103,26 @@ header {
 .contact-link {
   text-decoration: none;
   color: #757575;
+  fill: #757575;
+}
+.contact-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  /* Koperta i telefon nie są wyśrodkowane względem tekstu, powinny być ciut niżej. */
 }
 .navi-item-link:hover,
 .navi-item-link:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.contact-icon:hover,
+.contact-icon:focus {
   color: #2196f3;
+  fill: #2196f3;
 }
+/* END HEADER */
+
+/* TITLE */
 .title {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -143,13 +169,13 @@ header {
   cursor: pointer;
   padding: 10px 41px 10px 42px;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+/* LIST */
 .list {
   list-style-type: none;
   display: flex;
+}
+.list-item {
+  width: 270px;
 }
 .list-heading {
   font-weight: 700;
@@ -166,9 +192,24 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 270px;
   height: 75px;
+  margin: 0px;
 }
+.list-icon-box {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.list-icon {
+  height: 70px;
+  width: 70px;
+}
+/* END LIST */
+
+/* WHAT WE DO? */
 .second-title {
   font-weight: 700;
   font-size: 36px;
@@ -189,6 +230,9 @@ header {
 .second-title-item:not(:last-child) {
   margin-right: 30px;
 }
+/* END WHAT WE DO? */
+
+/* OUR TEAM */
 .our-team {
   background-color: #f5f4fa;
   font-size: 16px;
@@ -217,7 +261,32 @@ header {
   background-color: #ffffff;
   margin: 0;
 }
-.our-team-links {
+.our-team-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px 32px 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.our-team-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  fill: #afb1b8;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+.our-team-link:hover,
+.our-team-link:focus {
+  background-color: #2196f3;
+  fill: #fff;
 }
 .our-team-list-item:not(:last-child) {
   margin-right: 30px;
@@ -231,6 +300,9 @@ header {
   color: #757575;
   margin: 0px;
 }
+/* END OUR TEAM */
+
+/* BOTTOM */
 .bottom .container {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -262,6 +334,11 @@ header {
   color: rgba(255, 255, 255, 0.6);
   margin: 9px 0px 9px 0px;
 }
+/* END OUR TEAM */
+
+/* END MAIN PAGE */
+
+/* PORTFOLIO PAGE  */
 .portfolio-page {
   padding-bottom: 0px;
 }
@@ -336,3 +413,5 @@ header {
   margin-left: 24px;
   margin-bottom: 20px;
 }
+
+/* END PORTFOLIO PAGE */
