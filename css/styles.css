@@ -26,6 +26,7 @@ ul,
 ol {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 p {
   padding: 0;
@@ -44,6 +45,14 @@ link {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 /* END GENERAL */
 
@@ -78,7 +87,6 @@ header {
   color: #2196f3;
 }
 .site-navi {
-  list-style-type: none;
   display: flex;
 }
 .navi-item-link {
@@ -91,11 +99,9 @@ header {
 .contacts-navi {
   display: flex;
   margin-left: auto;
-  list-style-type: none;
 }
 .contacts {
   display: flex;
-  list-style-type: none;
 }
 .contact:not(:last-child) {
   margin-right: 50px;
@@ -171,7 +177,6 @@ header {
 }
 /* LIST */
 .list {
-  list-style-type: none;
   display: flex;
 }
 .list-item {
@@ -210,24 +215,15 @@ header {
 /* END LIST */
 
 /* WHAT WE DO? */
-.second-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-bottom: 50px;
-}
-.section-second-title {
+.what-we-do {
   padding-top: 0px;
   padding-bottom: 94px;
 }
-.second-title-list {
-  list-style-type: none;
+.what-we-do-list {
   display: flex;
   justify-content: space-between;
 }
-.second-title-item:not(:last-child) {
+.what-we-do-item:not(:last-child) {
   margin-right: 30px;
 }
 /* END WHAT WE DO? */
@@ -241,14 +237,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.our-team-headline {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  padding-bottom: 50px;
-}
 .our-team-list {
-  list-style-type: none;
   display: flex;
   justify-content: center;
 }
@@ -302,6 +291,35 @@ header {
 }
 /* END OUR TEAM */
 
+/* OUR CLIENTS */
+.our-clients-list {
+  display: flex;
+}
+.our-clients-list-item {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+.logo-icon {
+  width: 106px;
+  height: 60px;
+}
+.our-clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-clients-list-item:hover,
+.our-clients-list-item:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+/* END OUR CLIENTS */
+
 /* BOTTOM */
 .bottom .container {
   padding-top: 60px;
@@ -334,7 +352,7 @@ header {
   color: rgba(255, 255, 255, 0.6);
   margin: 9px 0px 9px 0px;
 }
-/* END OUR TEAM */
+/* END BOTTOM */
 
 /* END MAIN PAGE */
 
@@ -346,7 +364,6 @@ header {
   justify-content: center;
 }
 .portfolio-button-list {
-  list-style-type: none;
   display: flex;
   justify-content: center;
 }
@@ -383,7 +400,6 @@ header {
   margin: 0px;
 }
 .box-list {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -391,6 +407,7 @@ header {
 /*Spróbować zrobić co 3 element padding*/
 .box-list-item {
   margin-top: 30px;
+  cursor: pointer;
 }
 .box-name {
   font-weight: 700;
