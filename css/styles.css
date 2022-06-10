@@ -138,9 +138,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   /* object-fit:cover? */
-  max-width: 1600px;
-  color: #ffffff;
+  width: 1600px;
   height: 600px;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,11 +232,13 @@ header {
 /* OUR TEAM */
 .our-team {
   background-color: #f5f4fa;
+  width: 1600px;
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0 auto;
 }
 .our-team-list {
   display: flex;
