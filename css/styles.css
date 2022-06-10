@@ -134,7 +134,7 @@ header {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("./images/background-img.jpg");
+    url("../images/background-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -258,13 +258,15 @@ header {
   padding-left: 32px;
   padding-right: 32px;
 }
-.our-team-link {
+.social-link {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+}
+.our-team-link {
   background-color: #fff;
   fill: #afb1b8;
 }
@@ -351,6 +353,36 @@ header {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin: 9px 0px 9px 0px;
+}
+.bottom-list {
+  display: flex;
+}
+.bottom-list-item {
+}
+.bottom-list-item-headline {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.bottom-second-list {
+  display: flex;
+}
+.bottom-second-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.bottom-second-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #fff;
+}
+.bottom-list-item:not(:last-child) {
+  margin-right: 70px;
+}
+.bottom-second-list-link:hover,
+.bottom-second-list-link:focus {
+  background-color: #2196f3;
 }
 /* END BOTTOM */
 
